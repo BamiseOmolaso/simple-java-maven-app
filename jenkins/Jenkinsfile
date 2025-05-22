@@ -3,6 +3,11 @@ pipeline {
     options {
         skipStagesAfterUnstable()
     }
+    
+    tools {
+        maven 'mymaven'
+    }
+
     stages {
         stage('Build') {
             steps {
